@@ -265,7 +265,7 @@ fs.readFile("../shared.css",function(error,data){
 //我们的http服务器什么都没做只有websocket服务器，所以每个连接都会返回404.真正的web请求被处理通过主服务器。如果你想，你可以在此处返回一个真正的HTML页面于此
 function handleWebRequest(request, response) {
   log ("Received request for " + request.url);
-
+  log("test");
   switch(request.url)
   {
     case "/":
